@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5f40da44f7fafa3e44751a9b
+###
+
+POST  http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Snoop Dog",
+    "subscribedToChannel": "UrAvgSpoon"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/5f40db9fe9f15032c4d4a469
+
+###
+
+PATCH  http://localhost:3000/subscribers/5f40db9fe9f15032c4d4a469
+Content-Type: application/json
+
+{
+    "name": "New name",
+    "subscribedToChannel": "UrAvgSpoon"
+}
